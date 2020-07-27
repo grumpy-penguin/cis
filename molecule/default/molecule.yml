@@ -15,3 +15,17 @@ provisioner:
   name: ansible
 verifier:
   name: ansible
+
+scenario:
+  name: default
+# Probably something like below should disable idempotency check.
+  idempotent: false
+# Uncomment when developing locally to
+# keep instances running when tests are completed.
+# Must be kept commented when building on CI/CD.
+test_sequence:
+  - destroy
+  - create
+  - converge
+  - lint
+  - verify

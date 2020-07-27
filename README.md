@@ -1,3 +1,5 @@
+https://travis-ci.com/grumpy-penguin/cis.svg?branch=master
+
 Role Name
 =========
 

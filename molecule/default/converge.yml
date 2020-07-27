@@ -1,0 +1,7 @@
+---
+- name: Converge
+  hosts: all
+  tasks:
+    - name: "Include grumpypenguin.cis"
+      include_role:
+        name: "grumpypenguin.cis"
